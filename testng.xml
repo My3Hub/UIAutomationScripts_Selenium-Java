@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite parallel="tests" name="Suite">
+<listeners>
+<listener class-name="Selenium_Project.TestComponents.Listeners"/>
+</listeners>
+  <test thread-count="2" name="Test">
+    <classes>
+      <class name="Selenium_Project.TestCases.E2E">
+      <methods>
+      <exclude name="submitOrder_COD"/>
+      </methods>
+      </class>
+      <!--class name="Selenium_Project.TestCases.FavoritePageTests"/>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

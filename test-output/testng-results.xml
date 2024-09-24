@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-23T18:19:34 CDT" name="Suite" finished-at="2024-09-23T18:20:26 CDT" duration-ms="52287">
+    <groups>
+    </groups>
+    <test started-at="2024-09-23T18:19:34 CDT" name="Test" finished-at="2024-09-23T18:20:26 CDT" duration-ms="52287">
+      <class name="Selenium_Project.TestCases.E2E">
+        <test-method is-config="true" signature="CreateanAccount()[pri:0, instance:Selenium_Project.TestCases.E2E@6bb4dd34]" started-at="2024-09-23T18:19:34 CDT" name="CreateanAccount" finished-at="2024-09-23T18:19:54 CDT" duration-ms="19757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateanAccount -->
+        <test-method signature="submitOrder_Creditcard()[pri:0, instance:Selenium_Project.TestCases.E2E@6bb4dd34]" started-at="2024-09-23T18:19:54 CDT" name="submitOrder_Creditcard" finished-at="2024-09-23T18:20:25 CDT" duration-ms="30723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder_Creditcard -->
+        <test-method signature="validateInvoice()[pri:0, instance:Selenium_Project.TestCases.E2E@6bb4dd34]" started-at="2024-09-23T18:20:25 CDT" name="validateInvoice" finished-at="2024-09-23T18:20:26 CDT" depends-on-methods="Selenium_Project.TestCases.E2E.submitOrder_Creditcard" duration-ms="1404" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at Selenium_Project.pageObjects.InvoicePage.invoicesList(InvoicePage.java:44)
+at Selenium_Project.TestCases.E2E.validateInvoice(E2E.java:65)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInvoice -->
+      </class> <!-- Selenium_Project.TestCases.E2E -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
